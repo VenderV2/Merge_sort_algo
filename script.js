@@ -1,14 +1,16 @@
 let A = [3, 2, 1, 13, 8, 5, 0, 1];
-let B = copyArray();
-const end = A.length;
 
 
-function MergeSort() {
+
+function MergeSort(A) {
+    let B = copyArray();
+    const end = A.length;
 
     SplitMerge(A, B, 0, end)
     console.log(A)
+    
 }
-MergeSort()
+MergeSort(A)
 
 function SplitMerge(B, A, start, end) {
 
